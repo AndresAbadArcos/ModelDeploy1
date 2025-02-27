@@ -9,7 +9,6 @@ from botocore.exceptions import ClientError
 logger = logging.getLogger(__name__)
 sm_client = boto3.client("sagemaker")
 
-
 def get_approved_package(model_package_group_name):
     """Gets the latest approved model package for a model package group.
 
